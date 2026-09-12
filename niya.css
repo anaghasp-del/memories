@@ -1,0 +1,164 @@
+```css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* First section */
+
+.welcome {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        pink,
+        lavender,
+        lightblue
+    );
+}
+
+.welcome-box {
+    background-color: white;
+
+    padding: 50px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px gray;
+}
+
+.welcome-box h1 {
+    color: #d63384;
+    font-size: 40px;
+}
+
+.welcome-box p {
+    color: #555;
+    font-size: 18px;
+}
+
+.open-btn {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 30px;
+
+    background-color: #d63384;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+}
+
+.open-btn:hover {
+    background-color: #a61e63;
+}
+
+
+/* Memories section */
+
+#memories {
+    min-height: 100vh;
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #fff0f5,
+        #e6e6fa
+    );
+}
+
+#memories h2 {
+    color: #d63384;
+
+    font-size: 38px;
+}
+
+.intro {
+    color: #666;
+
+    font-size: 18px;
+
+    margin-bottom: 40px;
+}
+
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 220px);
+
+    justify-content: center;
+
+    gap: 35px;
+}
+
+.photo {
+    background-color: white;
+
+    padding: 10px;
+
+    padding-bottom: 20px;
+
+    box-shadow: 0 5px 15px gray;
+
+    transform: rotate(-2deg);
+
+    transition: 0.3s;
+}
+
+.photo:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.photo:hover {
+    transform: scale(1.08) rotate(0deg);
+}
+
+.photo img {
+    width: 200px;
+
+    height: 200px;
+
+    object-fit: cover;
+}
+
+.photo p {
+    color: #555;
+
+    margin-top: 12px;
+}
+
+.top {
+    display: inline-block;
+
+    margin-top: 40px;
+
+    color: #d63384;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+```
